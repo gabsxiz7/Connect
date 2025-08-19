@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connect60+ | Inclusão para todos</title>
+  <meta name="description" content="Connect60+ é uma plataforma de inclusão digital para idosos, com cursos e tutoriais simples sobre WhatsApp, Pix, YouTube, Saúde, Navegador e mais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Fonte legível e acolhedora -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="site-header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="#" aria-label="Página inicial Connect60+">
+        <span class="brand__title">Connect<span class="brand__accent">60+</span></span>
+      </a>
+      <nav class="nav" aria-label="principal">
+        <ul class="nav__list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cursos">Tutoriais</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Título principal + subtítulo explicativo -->
+  <section class="hero" id="inicio">
+    <div class="container hero__inner">
+      <h1 class="hero__title">
+        Connect<span class="hero__plus">60+</span> Inclusão Digital para Idosos
+      </h1>
+      <p class="hero__subtitle">
+        O <strong>Connect60+</strong> é uma plataforma criada para facilitar a vida digital da melhor idade.
+        Aqui a tecnologia é explicada de forma simples, passo a passo, com letras grandes, botões claros
+        e aulas diretas ao ponto. Nosso objetivo é promover <strong>autonomia</strong>, <strong>segurança</strong> e
+        <strong>confiança</strong> no uso do celular e da internet.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#cursos">Ver tutoriais</a>
+        <a class="btn btn--ghost" href="#sobre">Como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre / objetivo resumido -->
+  <section class="about" id="sobre">
+    <div class="container about__grid">
+      <div class="about__text">
+        <h2>Como funciona o projeto</h2>
+        <p>
+          Reunimos tutoriais curtos e objetivos sobre os aplicativos mais usados no dia a dia — como
+          <strong>WhatsApp</strong>, <strong>Pix</strong> e <strong>YouTube</strong> — além de orientações de
+          <strong>segurança digital</strong> para evitar golpes. Você pode aprender no seu ritmo, sem pressa,
+          com exemplos práticos e exercícios simples para treinar.
+        </p>
+        <ul class="feature-list" role="list">
+          <li>Conteúdo em linguagem clara, com letras grandes e alto contraste;</li>
+          <li>Passo a passo visual com imagens e instruções simples;</li>
+          <li>Seção de dúvidas frequentes e dicas de segurança;</li>
+          <li>Compatível com celular, tablet e computador.</li>
+        </ul>
+      </div>
+
+      <!-- Imagem de destaque (troque o src depois) -->
+      <figure class="about__media">
+        <img
+          src="IMG/idosos.png"
+          alt="Idosa sorrindo usando o celular, representando inclusão digital"
+          width="640" height="420" loading="lazy"
+        />
+        <figcaption>Imagem ilustrativa.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Cards de tutoriais -->
+  <section class="cards" id="cursos" aria-labelledby="cards-title">
+    <div class="container">
+      <h2 id="cards-title">Tutoriais por aplicativo</h2>
+      <p class="cards__intro">
+        Escolha um aplicativo para começar. Cada cartão traz instruções simples e um guia passo a passo.
+      </p>
+
+      <div class="cards__grid">
+        <!-- WhatsApp -->
+        <article class="card" aria-labelledby="card-whats-title">
+          <div class="card__icon" aria-hidden="true">💬</div>
+          <h3 id="card-whats-title" class="card__title">WhatsApp</h3>
+          <p class="card__text">
+            Aprenda a enviar mensagens, áudios, fotos e fazer chamadas de vídeo com segurança.
+          </p>
+          <ul class="card__bullets" role="list">
+            <li>Iniciar conversa e criar contatos;</li>
+            <li>Enviar áudio e foto sem erro;</li>
+            <li>Chamada de voz e vídeo;</li>
+            <li>Evitar golpes e links suspeitos.</li>
+          </ul>
+          <a class="btn btn--card" href="tutoriais/whatsapp.html">Ver guia</a>
+        </article>
+
+        <!-- Pix -->
+        <article class="card" aria-labelledby="card-pix-title">
+          <div class="card__icon" aria-hidden="true">💳</div>
+          <h3 id="card-pix-title" class="card__title">Pix</h3>
+          <p class="card__text">
+            Entenda como pagar, transferir e receber dinheiro pelo banco com segurança.
+          </p>
+          <ul class="card__bullets" role="list">
+            <li>Como acessar o app do banco;</li>
+            <li>Chave Pix (CPF, celular, e-mail);</li>
+            <li>Confirmar dados antes de enviar;</li>
+            <li>Dicas contra fraudes.</li>
+          </ul>
+          <a class="btn btn--card" href="tutoriais/pix.html">Ver guia</a>
+        </article>
+
+        <!-- YouTube -->
+        <article class="card" aria-labelledby="card-yt-title">
+          <div class="card__icon" aria-hidden="true">▶️</div>
+          <h3 id="card-yt-title" class="card__title">YouTube</h3>
+          <p class="card__text">
+            Pesquise vídeos, inscreva-se em canais e ajuste legendas e volume com facilidade.
+          </p>
+          <ul class="card__bullets" role="list">
+            <li>Pesquisar e reproduzir vídeos;</li>
+            <li>Ativar legendas e aumentar letras;</li>
+            <li>Inscrever-se em canais;</li>
+            <li>Assistir em TV ou celular.</li>
+          </ul>
+          <a class="btn btn--card" href="tutoriais/youtube.html">Ver guia</a>
+        </article>
+
+        <!-- Saúde (ex.: app do SUS) -->
+        <article class="card" aria-labelledby="card-saude-title">
+          <div class="card__icon" aria-hidden="true">🩺</div>
+          <h3 id="card-saude-title" class="card__title">Saúde</h3>
+          <p class="card__text">
+            Acesse carteirinha digital, marque consultas e veja exames pelos apps oficiais.
+          </p>
+          <ul class="card__bullets" role="list">
+            <li>Entrar com CPF e senha gov.br;</li>
+            <li>Ver vacinas e receitas;</li>
+            <li>Agendar consultas;</li>
+            <li>Alertas de remédios.</li>
+          </ul>
+          <a class="btn btn--card" href="tutoriais/saude.html">Ver guia</a>
+        </article>
+
+        <!-- Navegador (Chrome) -->
+        <article class="card" aria-labelledby="card-web-title">
+          <div class="card__icon" aria-hidden="true">🌐</div>
+          <h3 id="card-web-title" class="card__title">Navegador</h3>
+          <p class="card__text">
+            Use a internet com segurança: buscar no Google, salvar favoritos e reconhecer sites confiáveis.
+          </p>
+          <ul class="card__bullets" role="list">
+            <li>Pesquisar e abrir sites;</li>
+            <li>Salvar páginas favoritas;</li>
+            <li>Reconhecer sites falsos;</li>
+            <li>Privacidade básica.</li>
+          </ul>
+          <a class="btn btn--card" href="tutoriais/navegador.html">Ver guia</a>
+        </article>
+
+        <!-- Uber / Mobilidade -->
+        <article class="card" aria-labelledby="card-uber-title">
+          <div class="card__icon" aria-hidden="true">🚗</div>
+          <h3 id="card-uber-title" class="card__title">Mobilidade</h3>
+          <p class="card__text">
+            Aprenda a pedir carro por app, ver o preço antes e compartilhar a corrida com a família.
+          </p>
+          <ul class="card__bullets" role="list">
+            <li>Cadastrar endereço e forma de pagamento;</li>
+            <li>Verificar motorista e carro;</li>
+            <li>Compartilhar rota;</li>
+            <li>Avaliar a corrida.</li>
+          </ul>
+          <a class="btn btn--card" href="tutoriais/uber.html">Ver guia</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Connect60+</strong>
+        <span class="footer__tagline">Inclusão digital para a melhor idade</span>
+      </div>
+      <div class="footer__links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#cursos">Tutoriais</a>
+      </div>
+      <p class="footer__copy">© 2025 Connect60+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
