@@ -16,12 +16,24 @@
   <!-- Cabeçalho -->
   <header class="site-header" role="banner">
     <div class="container header__inner">
+
       <a class="brand" href="#" aria-label="Página inicial Connect+">
-        <span class="brand__title">Connect<span class="brand__accent">+</span></span>
-      </a>
+        <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
+        </a>
+
+      <form class="search" role="search" action="#" onsubmit="return false;">
+        <input
+          type="search"
+          class="search__input"
+          placeholder="O que você quer aprender hoje?..."
+          aria-label="O que você quer aprender hoje?"
+        />
+        <button type="submit" class="search__clear" aria-label="Limpar busca">✕</button>
+      </form>
+
       <nav class="nav" aria-label="principal">
         <ul class="nav__list">
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#inicio">Início</a></li>
           <li><a href="#cursos">Tutoriais</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -31,14 +43,37 @@
 
   <!-- Hero / Título principal + subtítulo explicativo -->
   <section class="hero" id="inicio">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">
+          <span class="hero__highlight">TECNOLOGIA</span><br />
+          SEM MEDO,<br />
+          <span class="hero__highlight">CONEXÃO</span><br />
+          SEM LIMITES.
+        </h1>
+      </div>
 
-</section>
+      <div class="hero__media">
+        <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+        <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+        <div class="hero__blob hero__blob--3" aria-hidden="true"></div>
+        <div class="hero__bar" aria-hidden="true"></div>
+
+        <figure class="hero__frame">
+          <video controls width="100%">
+            <source src="VIDEO/video.senhora.mp4" type="video/mp4">
+          </video>
+          />
+        </figure>
+      </div>
+    </div>
+  </section>
 
   <!-- Sobre / objetivo resumido -->
   <section class="about" id="sobre">
     <div class="container about__grid">
       <div class="about__text">
-        <h2>Como funciona o projeto</h2>
+        <h2>Como funciona o Con<span class="about__highlight">nect+</span>?</h2>
         <p>
           Reunimos tutoriais curtos e objetivos sobre os aplicativos mais usados no dia a dia — como
           <strong>WhatsApp</strong>, <strong>Pix</strong> e <strong>YouTube</strong> — além de orientações de
@@ -53,10 +88,11 @@
         </ul>
       </div>
 
-      <!-- Imagem de destaque (troque o src depois) -->
+      <!-- Imagem de destaque  -->
       <figure class="about__media">
+        <span class="about__media-bar" aria-hidden="true"></span>
         <img
-          src="IMG/idosos.png"
+          src="IMG/pensativo.png"
           alt="Idosa sorrindo usando o celular, representando inclusão digital"
           width="640" height="420" loading="lazy"
         />
