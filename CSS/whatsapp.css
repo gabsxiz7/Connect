@@ -1,0 +1,157 @@
+/* =========================================================
+   TOPO DA PÁGINA DE TUTORIAL
+   ========================================================= */
+
+.tutorial-hero {
+  padding: 64px 0 96px;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    rgba(20, 184, 166, 0.30) 0%,
+    rgba(20, 184, 166, 0) 30%
+  );
+
+}
+
+.tutorial-hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.tutorial-hero__media {
+  flex-shrink: 0;
+  width: 420px;
+  max-width: 100%;
+}
+
+.tutorial-hero__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tutorial-hero__text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.tutorial-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.tutorial-back:hover {
+  color: var(--teal);
+}
+
+
+.tutorial-hero__text h1 {
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.tutorial-hero__highlight {
+  color: var(--secondary); 
+
+}
+
+.tutorial-hero__text p {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  max-width: 480px;
+}
+
+/* =========================================================
+   PASSO A PASSO
+   ========================================================= */
+
+.tutorial-steps {
+  padding: 20px 0 80px;
+}
+
+.tutorial-step {
+  display: flex;
+  gap: 24px;
+
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tutorial-step:last-child {
+  border-bottom: none;
+}
+
+.tutorial-step__number {
+  flex-shrink: 0;
+
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: var(--teal);
+  color: white;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.tutorial-step__content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.tutorial-step__content ol {
+  display: grid;
+  gap: 12px;
+
+  padding-left: 22px;
+
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.tutorial-step__content li::marker {
+  font-weight: 800;
+  color: var(--teal-dark);
+}
+
+/* =========================================================
+   CTA FINAL
+   ========================================================= */
+
+.tutorial-next {
+  padding: 60px 0 100px;
+  text-align: center;
+}
+
+.tutorial-next__inner p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .tutorial-step {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
