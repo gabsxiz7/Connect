@@ -73,60 +73,128 @@
 /* =========================================================
    PASSO A PASSO
    ========================================================= */
+/*video*/
+   .tutorial-video {
+  padding: 56px 0 8px;
+  text-align: center;
+}
+
+.tutorial-video h2 {
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.tutorial-video p {
+  max-width: 560px;
+  margin: 0 auto 28px;
+  color: var(--text-light);
+}
+
+.tutorial-video__frame {
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+
+  background: #000;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.tutorial-video__frame video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
 
 .tutorial-steps {
-  padding: 20px 0 80px;
+  padding: 48px 0 24px;
+}
+
+.tutorial-steps > .container {
+  display: grid;
+  gap: 28px;
+  max-width: 900px;
 }
 
 .tutorial-step {
   display: flex;
   gap: 24px;
-
-  padding: 32px 0;
+  padding: 32px;
+  background:#fff;
   border-bottom: 1px solid var(--border);
-}
-
-.tutorial-step:last-child {
-  border-bottom: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
 }
 
 .tutorial-step__number {
   flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  color: white;
+  box-shadow: 0 8px 16px rgba(20, 184, 166, 0.35);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.tutorial-step__content {
+  flex: 1;
+}
 
-  width: 48px;
-  height: 48px;
+.tutorial-step__content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+.tutorial-step__content ol {
+  list-style: none;
+  counter-reset: item;
+  display: grid;
+  gap: 12px;
+  padding: 0;
+}
+
+.tutorial-step__content li {
+  position: relative;
+  counter-increment: item;
+
+  padding: 14px 16px 14px 56px;
+
+  background: #f0fdfa;
+  border-radius: 14px;
+
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.tutorial-step__content li::before {
+  content: counter(item);
+
+  position: absolute;
+  left: 16px;
+  top: 14px;
+
+  width: 28px;
+  height: 28px;
 
   display: grid;
   place-items: center;
 
   border-radius: 50%;
-  background: var(--teal);
-  color: white;
-
-  font-size: 1.2rem;
-  font-weight: 800;
-}
-
-.tutorial-step__content h2 {
-  font-size: 1.4rem;
-  margin-bottom: 14px;
-  color: var(--text);
-}
-
-.tutorial-step__content ol {
-  display: grid;
-  gap: 12px;
-
-  padding-left: 22px;
-
-  color: var(--text);
-  font-size: 1.02rem;
-  line-height: 1.6;
-}
-
-.tutorial-step__content li::marker {
-  font-weight: 800;
+  background: #fff;
+  border: 2px solid var(--teal);
   color: var(--teal-dark);
+
+  font-size: 0.85rem;
+  font-weight: 800;
 }
 
 /* =========================================================
@@ -134,15 +202,34 @@
    ========================================================= */
 
 .tutorial-next {
-  padding: 60px 0 100px;
+  padding: 24px 0 90px;
+}
+
+.tutorial-next__inner {
+  max-width: 900px;
+  padding: 40px 24px;
+
   text-align: center;
+
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.16), rgba(20, 184, 166, 0.04));
+  border-radius: var(--radius-lg);
 }
 
 .tutorial-next__inner p {
   margin-bottom: 18px;
-  font-size: 1.1rem;
-  color: var(--text);
+  font-size: 1.15rem;
   font-weight: 600;
+  color: var(--text);
+}
+
+.tutorial-next .btn--primary {
+  background: var(--teal);
+  box-shadow: 0 8px 18px rgba(20, 184, 166, 0.35);
+}
+
+.tutorial-next .btn--primary:hover {
+  background: var(--teal-dark);
+  box-shadow: 0 12px 24px rgba(20, 184, 166, 0.45);
 }
 
 /* =========================================================
@@ -153,5 +240,6 @@
   .tutorial-step {
     flex-direction: column;
     gap: 14px;
+    padding: 22px;
   }
 }

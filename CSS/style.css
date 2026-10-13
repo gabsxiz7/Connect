@@ -541,14 +541,12 @@ a {
 }
 
 .team__grid {
-  display: grid;
-
-  grid-template-columns: repeat(5, 1fr);
-
-  gap: 18px;
+  display: flex;
+  justify-content: center;
 }
 
 .team-card {
+  width: 280px;
   padding: 24px 16px;
 
   text-align: center;
