@@ -402,50 +402,58 @@ a {
 
 .card {
   position: relative;
-  box-shadow: 10px 18px 28px rgba(6, 40, 36, 0.28);
-
   display: flex;
   flex-direction: column;
 
-  padding: 28px;
+  padding: 36px 28px 28px;
 
-  min-height: 35px;
+  background: #fff;
+  border: 1px solid rgba(20, 184, 166, 0.15);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(6, 40, 36, 0.1);
+  overflow: hidden;
 
-  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  border: 1px solid var(--border);
-
-  border-radius: var(--radius);
-
-  box-shadow: var(--shadow-sm);
-
-  transition: 0.25s ease;
+/* faixa teal no topo */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-dark));
 }
 
 .card:hover {
-  transform: translateY(-6px);
-
-  box-shadow: 14px 24px 34px rgba(6, 40, 36, 0.32);
+  transform: translateY(-8px);
+  box-shadow: 0 22px 44px rgba(6, 40, 36, 0.22);
 }
 
 /* ÍCONE */
 
 .card__icon {
-  width: 58px;
-  height: 58px;
+  width: 64px;
+  height: 64px;
 
   display: grid;
   place-items: center;
 
   margin-bottom: 22px;
 
-  border-radius: 16px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+  box-shadow: 0 6px 14px rgba(20, 184, 166, 0.25);
 
-  background: var(--primary-light);
+  font-size: 30px;
 
-  color: var(--primary);
+  transition: transform 0.3s ease;
+}
 
-  font-size: 27px;
+.card:hover .card__icon {
+  transform: scale(1.08) rotate(-4deg);
 }
 
 /* TÍTULO */
@@ -453,7 +461,9 @@ a {
 .card__title {
   margin-bottom: 8px;
 
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
 }
 
 /* TEXTO */
@@ -461,9 +471,9 @@ a {
 .card__text {
   color: var(--text-light);
 
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 /* LISTA */
@@ -472,24 +482,38 @@ a {
   list-style: none;
 
   display: grid;
+  gap: 10px;
 
-  gap: 8px;
+  margin-bottom: 28px;
 
-  margin-bottom: 25px;
+  color: var(--text);
 
-  color: var(--text-light);
+  font-size: 0.92rem;
+}
 
-  font-size: 0.88rem;
+.card__bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .card__bullets li::before {
-  content: "•";
+  content: "✓";
 
-  color: var(--secondary);
+  flex-shrink: 0;
 
-  font-weight: 900;
+  width: 20px;
+  height: 20px;
 
-  margin-right: 8px;
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: #ccfbf1;
+  color: var(--teal-dark);
+
+  font-size: 0.7rem;
+  font-weight: 800;
 }
 
 /* BOTÃO CARD */
@@ -499,17 +523,27 @@ a {
 
   width: 100%;
 
-  background: var(--primary-light);
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  color: #fff;
 
-  color: var(--primary);
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(20, 184, 166, 0.3);
+}
 
-  border: 1px solid transparent;
+.btn--card::after {
+  content: "→";
+  margin-left: 8px;
+  transition: transform 0.2s ease;
 }
 
 .btn--card:hover {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--teal-dark), var(--teal-darker));
+  color: #fff;
+}
 
-  color: white;
+.btn--card:hover::after {
+  transform: translateX(4px);
 }
 
 /* =========================================================
@@ -519,7 +553,7 @@ a {
 .team {
   padding: 100px 0;
 
- background: linear-gradient(
+  background: linear-gradient(
     to top,
     rgba(20, 184, 166, 0.30) 0%,
     rgba(20, 184, 166, 0) 30%
@@ -541,46 +575,54 @@ a {
 }
 
 .team__grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
 }
 
 .team-card {
-  width: 280px;
-  padding: 24px 16px;
+  position: relative;
+
+  padding: 36px 22px 28px;
 
   text-align: center;
 
-  background: var(--background);
+  background: #fff;
+  border: 1px solid rgba(20, 184, 166, 0.15);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(6, 40, 36, 0.1);
+  overflow: hidden;
 
-  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  border-radius: var(--radius);
+/* faixa teal no topo */
+.team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
 
-  transition: 0.2s ease;
 }
 
 .team-card:hover {
-  transform: translateY(-4px);
-
-  background: white;
-
-  box-shadow: var(--shadow);
+  transform: translateY(-8px);
+  box-shadow: 0 22px 44px rgba(6, 40, 36, 0.22);
 }
 
 .team-card__img {
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
 
-  margin: 0 auto 16px;
+  margin: 0 auto 18px;
 
   border-radius: 50%;
-
   overflow: hidden;
 
-  border: 4px solid white;
-
-  box-shadow: var(--shadow);
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px var(--teal), var(--shadow);
 }
 
 .team-card__img img {
@@ -590,16 +632,48 @@ a {
   object-fit: cover;
 }
 
-.team-card__name {
-  font-size: 1rem;
+.team-card__icon {
+  width: 64px;
+  height: 64px;
 
-  margin-bottom: 4px;
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto 18px;
+
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+  box-shadow: 0 6px 14px rgba(20, 184, 166, 0.25);
+
+  font-size: 30px;
+}
+
+.team-card__name {
+  margin-bottom: 8px;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text);
 }
 
 .team-card__role {
-  color: var(--text-light);
+  display: inline-block;
+
+  margin-bottom: 12px;
+  padding: 4px 12px;
+
+  background: #ccfbf1;
+  color: var(--teal-dark);
+  border-radius: 999px;
 
   font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.team-card__text {
+  color: var(--text-light);
+
+  font-size: 0.92rem;
 }
 
 
