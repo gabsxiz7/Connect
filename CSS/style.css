@@ -680,4 +680,97 @@ a {
 /* =========================================================
    RESPONSIVIDADE
    ========================================================= */
+.hero__frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
+@media (max-width: 1024px) {
+  .hero {
+    padding: 48px 0 64px;
+  }
+
+  .hero__inner {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .hero__title {
+    padding-left: 0;
+  }
+
+  .hero__media {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding: 70px 0;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cards {
+    padding: 40px 0;
+  }
+
+  .cards__grid,
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .hero__title {
+    font-size: 1.9rem;
+  }
+
+  .hero__media {
+    width: 100%;
+    height: 340px;
+  }
+
+  .hero__frame {
+    top: 24px;
+    width: 88%;
+    height: 280px;
+  }
+
+  .hero__blob--1 { width: 170px; height: 170px; left: 10px; }
+  .hero__blob--2 { width: 120px; height: 120px; top: 120px; left: -20px; }
+  .hero__blob--3 { width: 80px; height: 80px; top: 220px; left: 10px; }
+
+  .hero__bar {
+    left: 16px;
+    width: 75%;
+    height: 32px;
+    bottom: 6px;
+  }
+
+  .about,
+  .team {
+    padding: 60px 0;
+  }
+
+  .cards__grid,
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards__decor {
+    width: 130px;
+    height: 130px;
+    opacity: 0.6;
+  }
+
+  .card {
+    padding: 32px 22px 24px;
+  }
+}

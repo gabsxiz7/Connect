@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Como usar apps de Mobilidade | Connect+</title>
+  <link rel="icon" href="IMG/logoconnect.svg" type="image/svg+xml">
+  <meta name="description" content="Guia passo a passo de apps de mobilidade para iniciantes: cadastrar endereço e pagamento, conferir motorista e carro, compartilhar a rota e avaliar a corrida." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/navbar.css" />
+  <link rel="stylesheet" href="CSS/mobilidade.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+   <header class="site-header" role="banner">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Página inicial Connect+">
+      <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__menu" id="menu-principal">
+      <form class="search" role="search" action="#" onsubmit="return false;">
+        <input type="search" class="search__input" placeholder="O que você quer aprender hoje?..." aria-label="O que você quer aprender hoje?" />
+        <button type="submit" class="search__clear" aria-label="Limpar busca">✕</button>
+      </form>
+
+      <nav class="nav" aria-label="principal">
+        <ul class="nav__list">
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#cursos">Tutoriais</a></li>
+          <li><a href="index.html#sobre-nos">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <!-- Topo da página de tutorial -->
+    <section class="tutorial-hero">
+      <div class="container tutorial-hero__inner">
+        <div class="tutorial-hero__media">
+          <img src="IMG/mobilidadebanner.svg" alt="Mão segurando celular com um aplicativo de transporte aberto" />
+        </div>
+        <div class="tutorial-hero__text">
+          <a class="tutorial-back" href="../index.html#cursos">← Voltar para tutoriais</a>
+          <h1>Como usar apps de<br /><span class="tutorial-hero__highlight">Mobilidade</span></h1>
+          <p>
+            Um guia bem simples, passo a passo, pra você aprender a pedir um carro pelo celular,
+            ver o preço antes e deixar a família acompanhando a corrida.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vídeo de apoio -->
+    <section class="tutorial-video">
+      <div class="container">
+        <h2>Assista ao tutorial</h2>
+        <p>Prefere ver como se faz? Dê o play e acompanhe, depois confira o passo a passo escrito.</p>
+        <div class="tutorial-video__frame">
+          <video controls preload="metadata">
+            <source src="VIDEO/tutorial-mobilidade.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Passo a passo -->
+    <section class="tutorial-steps">
+      <div class="container">
+
+        <article class="tutorial-step" id="passo-1">
+          <div class="tutorial-step__number" aria-hidden="true">1</div>
+          <div class="tutorial-step__content">
+            <h2>Cadastrar endereço e forma de pagamento</h2>
+            <ol>
+              <li>Baixe um aplicativo de transporte, como o <strong>Uber</strong> ou o <strong>99</strong>, na loja de aplicativos do celular e abra.</li>
+              <li>Crie sua conta com seu nome e número de celular. O app vai mandar um código por SMS para confirmar.</li>
+              <li>Toque no seu perfil ou em <strong>"Conta"</strong>, depois em <strong>"Pagamento"</strong>, e escolha como vai pagar: cartão, Pix ou dinheiro.</li>
+              <li>Em <strong>"Locais salvos"</strong>, cadastre os endereços de <strong>"Casa"</strong> e <strong>"Trabalho"</strong> para não precisar digitar toda vez.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tutorial-step" id="passo-2">
+          <div class="tutorial-step__number" aria-hidden="true">2</div>
+          <div class="tutorial-step__content">
+            <h2>Verificar motorista e carro</h2>
+            <ol>
+              <li>Toque em <strong>"Para onde?"</strong>, digite o destino e confira o <strong>preço</strong> antes de pedir.</li>
+              <li>Toque em confirmar. Quando um motorista aceitar, o app mostra a foto, o nome, o modelo, a cor e a <strong>placa</strong> do carro.</li>
+              <li>Antes de entrar, confira se a placa e o nome batem com o que está no app. Pergunte ao motorista <strong>"Para quem é a corrida?"</strong> e deixe ele dizer o seu nome.</li>
+              <li>Se algo não bater, não entre no carro. Cancele a corrida pelo próprio app.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tutorial-step" id="passo-3">
+          <div class="tutorial-step__number" aria-hidden="true">3</div>
+          <div class="tutorial-step__content">
+            <h2>Compartilhar rota</h2>
+            <ol>
+              <li>Com a corrida em andamento, procure o botão <strong>"Compartilhar status da viagem"</strong> ou o ícone de segurança (um escudo) na tela.</li>
+              <li>Escolha uma pessoa da família ou um amigo de confiança na sua lista de contatos.</li>
+              <li>Ela recebe um link e acompanha o trajeto em tempo real, até você chegar.</li>
+              <li>Você também pode cadastrar contatos de confiança no menu de segurança do app, para compartilhar mais rápido nas próximas vezes.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tutorial-step" id="passo-4">
+          <div class="tutorial-step__number" aria-hidden="true">4</div>
+          <div class="tutorial-step__content">
+            <h2>Avaliar a corrida</h2>
+            <ol>
+              <li>Ao chegar, confira o valor final e se o pagamento foi feito do jeito que você escolheu.</li>
+              <li>O app vai mostrar de 1 a 5 estrelas. Toque na quantidade de estrelas que você quer dar ao motorista.</li>
+              <li>Se quiser, deixe um comentário ou um elogio. Isso é opcional.</li>
+              <li>Se algo deu errado na corrida, toque em <strong>"Ajuda"</strong> e escolha a opção de relatar um problema.</li>
+            </ol>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Chamada para outros tutoriais -->
+    <section class="tutorial-next">
+      <div class="container tutorial-next__inner">
+        <p>Quer aprender outro aplicativo?</p>
+        <a class="btn btn--primary" href="../index.html#cursos">← Ver todos os tutoriais</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Connect+</strong>
+        <span class="footer__tagline">Inclusão digital para a melhor idade</span>
+      </div>
+      <div class="footer__links">
+        <a href="../index.html#inicio">Início</a>
+        <a href="../index.html#sobre-nos">Sobre</a>
+        <a href="../index.html#cursos">Tutoriais</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <p class="footer__copy">© 2026 Connect+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="JS/navbar.js" defer></script>
+</body>
+</html>

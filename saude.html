@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Como usar os apps de Saúde | Connect+</title>
+  <link rel="icon" href="IMG/logoconnect.svg" type="IMG/logo">
+  <meta name="description" content="Guia passo a passo de saúde digital para iniciantes: entrar com gov.br, ver vacinas e receitas, agendar consultas e criar alertas de remédios." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/navbar.css" />
+  <link rel="stylesheet" href="CSS/saude.css" />
+
+</head>
+<body>
+  <!-- cabeçalho (igual ao da home, com os caminhos ajustados) -->
+   <header class="site-header" role="banner">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Página inicial Connect+">
+      <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__menu" id="menu-principal">
+      <form class="search" role="search" action="#" onsubmit="return false;">
+        <input type="search" class="search__input" placeholder="O que você quer aprender hoje?..." aria-label="O que você quer aprender hoje?" />
+        <button type="submit" class="search__clear" aria-label="Limpar busca">✕</button>
+      </form>
+
+      <nav class="nav" aria-label="principal">
+        <ul class="nav__list">
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#cursos">Tutoriais</a></li>
+          <li><a href="index.html#sobre-nos">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <!-- Topo da página de tutorial -->
+    <section class="tutorial-hero">
+      <div class="container tutorial-hero__inner">
+        <div class="tutorial-hero__media">
+          <img src="IMG/saudebanner.svg" alt="Mão segurando celular com o aplicativo de saúde aberto" />
+      </div>
+      <div class="tutorial-hero__text">
+         <a class="tutorial-back" href="../index.html#cursos">← Voltar para tutoriais</a>
+         <h1>Como usar<br/><span class="tutorial-hero__highlight">apps de Saúde</span></h1>
+        <p>
+         Um guia bem simples, passo a passo, pra você aprender a acessar sua carteirinha, ver vacinas e receitas, marcar 
+         consultas e criar alertas de remédios pelo celular com segurança.
+         </p>
+       </div>
+     </div>
+    </section>
+
+    <!-- vídeo de apoio -->
+     <section class="tutorial-video">
+      <div class="container">
+        <h2>Assista ao tutorial</h2>
+        <p>Prefere ver como se faz? Dê o play e acompanhe, depois confira o passo a passo escrito.</p>
+        <div class="tutorial-video__frame">
+          <video controls preload="metadata">
+            <source src="VIDEO/tutorial-youtube.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+     </section>
+
+    <!-- passo a passo -->
+    <section class="tutorial-steps">
+      <div class="container">
+
+        <article class="tutorial-step" id="passo-1">
+          <div class="tutorial-step__number" aria-hidden="true">1</div>
+          <div class="tutorial-step__content">
+            <h2>Entrar com CPF e senha gov.br</h2>
+            <ol>
+              <li>Abra a loja de aplicativos do celular e baixe o <strong>app oficial do Ministério da Saúde</strong>.</li>
+              <li>Abra o app e toque em <strong>"Entrar com gov.br"</strong>.</li>
+              <li>Digite seu <strong>CPF</strong> e depois sua <strong>senha do gov.br</strong>.</li>
+              <li>Se esquecer a senha, toque em <strong>"Esqueci minha senha"</strong>. Nunca passe sua senha ou os códigos que chegarem por SMS para ninguém.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tutorial-step" id="passo-2">
+          <div class="tutorial-step__number" aria-hidden="true">2</div>
+          <div class="tutorial-step__content">
+            <h2>Ver vacinas e receitas</h2>
+            <ol>
+              <li>Com o app aberto, toque em <strong>"Minha Saúde"</strong> para acessar suas informações.</li>
+              <li>Para ver suas vacinas, toque em <strong>"Vacinas"</strong>.</li>
+              <li>Para ver suas receitas, toque em <strong>"Receitas"</strong>.</li>
+              <li>Se alguma informação estiver errada ou faltando, leve seu documento ao posto de saúde para atualizar.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tutorial-step" id="passo-3">
+          <div class="tutorial-step__number" aria-hidden="true">3</div>
+          <div class="tutorial-step__content">
+            <h2>Agendar consultas</h2>
+            <ol>
+              <li>Abra o app e toque em <strong>"Agendar Consulta"</strong>.</li>
+              <li>Escolha o tipo de consulta e o posto de saúde mais perto de você.</li>
+              <li>Selecione o dia e o horário disponíveis e toque em <strong>"Confirmar"</strong>.</li>
+              <li>Em algumas cidades o agendamento é feito direto no posto ou pelo app da prefeitura. Se não achar a opção, pergunte na UBS do seu bairro.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tutorial-step" id="passo-4">
+          <div class="tutorial-step__number" aria-hidden="true">4</div>
+          <div class="tutorial-step__content">
+            <h2>Alertas de remédio</h2>
+            <ol>
+              <li>No celular, abra o aplicativo <strong>"Relógio"</strong> e toque em <strong>"Alarme"</strong>.</li>
+              <li>Toque no botão <strong>"+"</strong> e escolha o horário em que você toma o remédio.</li>
+              <li>Dê um nome ao alarme, por exemplo <strong>"Remédio da pressão"</strong>, e marque os dias da semana.</li>
+              <li>Crie um alarme para cada horário. Quando tocar, é hora de tomar o remédio, seguindo sempre a orientação do seu médico.</li>
+            </ol>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- chamada para outros tutoriais -->
+    <section class="tutorial-next">
+      <div class="container tutorial-next__inner">
+        <p>Quer aprender outro aplicativo?</p>
+        <a class="btn btn--primary" href="../index.html#cursos">← Ver todos os tutoriais</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- rodapé (igual ao da home) -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Connect+</strong>
+        <span class="footer__tagline">Inclusão digital para a melhor idade</span>
+      </div>
+      <div class="footer__links">
+        <a href="../index.html#inicio">Início</a>
+        <a href="../index.html#sobre-nos">Sobre</a>
+        <a href="../index.html#cursos">Tutoriais</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <p class="footer__copy">© 2026 Connect+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="JS/navbar.js" defer></script>
+</body>
+</html>

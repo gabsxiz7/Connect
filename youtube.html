@@ -17,30 +17,32 @@
 <body>
   <!-- Cabeçalho (igual ao da home, com os caminhos ajustados) -->
   <header class="site-header" role="banner">
-    <div class="container header__inner">
-      <a class="brand" href="../index.html" aria-label="Página inicial Connect+">
-        <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
-      </a>
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Página inicial Connect+">
+      <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
+    </a>
 
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__menu" id="menu-principal">
       <form class="search" role="search" action="#" onsubmit="return false;">
-        <input
-          type="search"
-          class="search__input"
-          placeholder="O que você quer aprender hoje?..."
-          aria-label="O que você quer aprender hoje?"
-        />
+        <input type="search" class="search__input" placeholder="O que você quer aprender hoje?..." aria-label="O que você quer aprender hoje?" />
         <button type="submit" class="search__clear" aria-label="Limpar busca">✕</button>
       </form>
 
       <nav class="nav" aria-label="principal">
         <ul class="nav__list">
-          <li><a href="../index.html#inicio">Início</a></li>
-          <li><a href="../index.html#cursos">Tutoriais</a></li>
-          <li><a href="../index.html#contato">Contato</a></li>
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#cursos">Tutoriais</a></li>
+          <li><a href="index.html#sobre-nos">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
     <!-- Topo da página de tutorial -->
@@ -150,11 +152,13 @@
       </div>
       <div class="footer__links">
         <a href="../index.html#inicio">Início</a>
-        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#sobre-nos">Sobre</a>
         <a href="../index.html#cursos">Tutoriais</a>
+        <a href="contato.html">Contato</a>
       </div>
-      <p class="footer__copy">© 2025 Connect+. Todos os direitos reservados.</p>
+      <p class="footer__copy">© 2026 Connect+. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script src="JS/navbar.js" defer></script>
 </body>
 </html>

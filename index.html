@@ -16,31 +16,32 @@
 <body>
   <!-- Cabeçalho -->
   <header class="site-header" role="banner">
-    <div class="container header__inner">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Página inicial Connect+">
+      <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
+    </a>
 
-      <a class="brand" href="#" aria-label="Página inicial Connect+">
-        <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
-        </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span>
+    </button>
 
+    <div class="header__menu" id="menu-principal">
       <form class="search" role="search" action="#" onsubmit="return false;">
-        <input
-          type="search"
-          class="search__input"
-          placeholder="O que você quer aprender hoje?..."
-          aria-label="O que você quer aprender hoje?"
-        />
+        <input type="search" class="search__input" placeholder="O que você quer aprender hoje?..." aria-label="O que você quer aprender hoje?" />
         <button type="submit" class="search__clear" aria-label="Limpar busca">✕</button>
       </form>
 
       <nav class="nav" aria-label="principal">
         <ul class="nav__list">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#cursos">Tutoriais</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#cursos">Tutoriais</a></li>
+          <li><a href="index.html#sobre-nos">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Hero / Título principal + subtítulo explicativo -->
   <section class="hero" id="inicio">
@@ -142,7 +143,7 @@
             <li>Confirmar dados antes de enviar;</li>
             <li>Dicas contra fraudes.</li>
           </ul>
-          <a class="btn btn--card" href="tutoriais/pix.html">Ver guia</a>
+          <a class="btn btn--card" href="pix.html">Ver guia</a>
         </article>
 
         <!-- YouTube -->
@@ -174,7 +175,7 @@
             <li>Agendar consultas;</li>
             <li>Alertas de remédios.</li>
           </ul>
-          <a class="btn btn--card" href="tutoriais/saude.html">Ver guia</a>
+          <a class="btn btn--card" href="saude.html">Ver guia</a>
         </article>
 
         <!-- Navegador (Chrome) -->
@@ -190,7 +191,7 @@
             <li>Reconhecer sites falsos;</li>
             <li>Privacidade básica.</li>
           </ul>
-          <a class="btn btn--card" href="tutoriais/navegador.html">Ver guia</a>
+          <a class="btn btn--card" href="navegador.html">Ver guia</a>
         </article>
 
         <!-- Uber / Mobilidade -->
@@ -206,7 +207,7 @@
             <li>Compartilhar rota;</li>
             <li>Avaliar a corrida.</li>
           </ul>
-          <a class="btn btn--card" href="tutoriais/uber.html">Ver guia</a>
+          <a class="btn btn--card" href="mobilidade.html">Ver guia</a>
         </article>
       </div>
     </div>
@@ -224,7 +225,7 @@
         <!-- Card integrante 1 -->
         <article class="team-card">
           <div class="team-card__img">
-            <img src="IMG/euzinha.png" alt="Foto de Gabriella Lacerda" />
+            <img src="IMG/eu.diva.jpg" alt="Foto de Gabriella Lacerda" />
           </div>
           <h3 class="team-card__name">Gabriella Lacerda</h3>
           <p class="team-card__role">CEO do projeto.</p>
@@ -264,7 +265,7 @@
   </section>
 
   <!-- Rodapé -->
-  <footer class="site-footer" id="contato">
+  <footer class="site-footer" id="rodape">
     <div class="container footer__inner">
       <div class="footer__brand">
         <strong>Connect+</strong>
@@ -272,11 +273,13 @@
       </div>
       <div class="footer__links">
         <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#sobre-nos">Sobre</a>
         <a href="#cursos">Tutoriais</a>
+         <a href="contato.html">Contato</a>
       </div>
-      <p class="footer__copy">© 2025 Connect+. Todos os direitos reservados.</p>
+      <p class="footer__copy">© 2026 Connect+. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script src="JS/navbar.js" defer></script>
 </body>
 </html>

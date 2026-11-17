@@ -192,3 +192,135 @@
 /* =========================================================
    RESPONSIVIDADE (navbar + footer)
    ========================================================= */
+.brand {
+  width: 190px;
+  flex-shrink: 0;
+}
+
+.header__menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header__menu .search {
+  margin-inline: auto;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header__inner {
+    position: static;
+    height: 76px;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .brand {
+    width: 150px;
+  }
+
+  .brand__logo {
+    height: 84px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--text);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* painel que abre embaixo do cabeçalho */
+  .header__menu {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 16px 24px rgba(6, 40, 36, 0.12);
+    flex: none;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .header__menu .search {
+  margin-inline: 0;
+}
+
+  .header__menu.is-open {
+    display: flex;
+  }
+
+  .search {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .nav__list a {
+    padding: 14px 16px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

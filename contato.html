@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato e dúvidas | Connect+</title>
+  <link rel="icon" href="IMG/logoconnect.svg" type="image/svg+xml">
+  <meta name="description" content="Tire suas dúvidas sobre o Connect+. Escreva sua pergunta sem precisar de cadastro e veja as respostas para as dúvidas mais comuns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/navbar.css" />
+  <link rel="stylesheet" href="CSS/contato.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="site-header" role="banner">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Página inicial Connect+">
+      <img src="IMG/logotipo.connect.svg" alt="Connect+" class="brand__logo" />
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__menu" id="menu-principal">
+      <form class="search" role="search" action="#" onsubmit="return false;">
+        <input type="search" class="search__input" placeholder="O que você quer aprender hoje?..." aria-label="O que você quer aprender hoje?" />
+        <button type="submit" class="search__clear" aria-label="Limpar busca">✕</button>
+      </form>
+
+      <nav class="nav" aria-label="principal">
+        <ul class="nav__list">
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#cursos">Tutoriais</a></li>
+          <li><a href="index.html#sobre-nos">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <!-- Topo -->
+    <section class="contact-hero">
+      <div class="container">
+        <a class="contact-back" href="index.html">← Voltar para o início</a>
+        <h1>Ficou com alguma <span class="contact-hero__highlight">dúvida?</span></h1>
+        <p>
+          Escreva aqui embaixo, sem pressa. Você não precisa criar conta
+          e não precisa ter e-mail para nos mandar sua pergunta.
+        </p>
+      </div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="contact" aria-labelledby="form-title">
+      <div class="container">
+        <div class="contact-card">
+
+          <form class="contact-form" id="form-duvida">
+            <h2 id="form-title">Envie sua dúvida</h2>
+
+            <div class="field">
+              <label for="nome">Qual é o seu nome?</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+            </div>
+
+            <fieldset class="field">
+              <legend>Sobre qual assunto é a sua dúvida?</legend>
+              <div class="chips">
+                <input type="radio" id="a-whatsapp" name="assunto" value="WhatsApp" required />
+                <label for="a-whatsapp">💬 WhatsApp</label>
+
+                <input type="radio" id="a-pix" name="assunto" value="Pix" />
+                <label for="a-pix">💳 Pix</label>
+
+                <input type="radio" id="a-youtube" name="assunto" value="YouTube" />
+                <label for="a-youtube">▶️ YouTube</label>
+
+                <input type="radio" id="a-saude" name="assunto" value="Saúde" />
+                <label for="a-saude">🩺 Saúde</label>
+
+                <input type="radio" id="a-navegador" name="assunto" value="Navegador" />
+                <label for="a-navegador">🌐 Navegador</label>
+
+                <input type="radio" id="a-mobilidade" name="assunto" value="Mobilidade" />
+                <label for="a-mobilidade">🚗 Mobilidade</label>
+
+                <input type="radio" id="a-outro" name="assunto" value="Outro" />
+                <label for="a-outro">✨ Outro assunto</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="duvida">Escreva a sua dúvida</label>
+              <textarea id="duvida" name="duvida" rows="5" placeholder="Conte com suas palavras o que você quer saber..." required></textarea>
+            </div>
+
+            <div class="field">
+              <label for="retorno">Quer receber uma resposta? <span class="field__optional">(opcional)</span></label>
+              <input type="text" id="retorno" name="retorno" placeholder="Seu telefone com DDD ou e-mail" />
+              <small>Só preencha se quiser. Usamos apenas para responder a sua dúvida.</small>
+            </div>
+
+            <button type="submit" class="btn btn--card contact-form__send">Enviar minha dúvida</button>
+          </form>
+
+          <!-- Mensagem depois de enviar -->
+          <div class="contact-success" id="mensagem-sucesso" role="status" aria-live="polite" hidden>
+            <div class="contact-success__icon" aria-hidden="true">✅</div>
+            <h2>Dúvida enviada!</h2>
+            <p>Muito obrigada por escrever. Vamos ler com carinho a sua pergunta.</p>
+            <a class="btn btn--card" href="index.html#cursos">Ver os tutoriais</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Dúvidas frequentes -->
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Dúvidas frequentes</h2>
+        <p class="faq__intro">Talvez a resposta já esteja aqui. Toque na pergunta para abrir.</p>
+
+        <div class="faq__list">
+          <details>
+            <summary>Preciso criar conta ou fazer cadastro?</summary>
+            <p>Não. O Connect+ é aberto para todos. É só escolher o aplicativo que quer aprender e seguir o passo a passo.</p>
+          </details>
+
+          <details>
+            <summary>O Connect+ é gratuito?</summary>
+            <p>Sim. Todos os tutoriais são gratuitos e você pode ver quantas vezes quiser, no seu ritmo.</p>
+          </details>
+
+          <details>
+            <summary>Posso usar no celular, no tablet e no computador?</summary>
+            <p>Pode. O site funciona em qualquer aparelho com internet.</p>
+          </details>
+
+          <details>
+            <summary>Como aumento as letras da tela?</summary>
+            <p>No celular, procure em <strong>Configurações</strong> a opção <strong>"Tamanho da fonte"</strong> ou <strong>"Acessibilidade"</strong>. No computador, segure a tecla <strong>Ctrl</strong> e aperte a tecla <strong>+</strong> algumas vezes. Os nomes dos menus mudam um pouco de aparelho para aparelho.</p>
+          </details>
+
+          <details>
+            <summary>Caí em um golpe. O que eu faço?</summary>
+            <p>Calma, você não está sozinho. Ligue na hora para o seu banco ou para o aplicativo envolvido e explique o que aconteceu. Depois, registre um boletim de ocorrência e peça ajuda a alguém de confiança.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer" id="rodape">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Connect+</strong>
+        <span class="footer__tagline">Inclusão digital para a melhor idade</span>
+      </div>
+      <div class="footer__links">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#sobre-nos">Sobre</a>
+        <a href="index.html#cursos">Tutoriais</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <p class="footer__copy">© 2026 Connect+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mostra a mensagem de agradecimento ao enviar.
+    // Para receber as dúvidas de verdade, veja a observação sobre Formspree.
+    const form = document.getElementById("form-duvida");
+    const sucesso = document.getElementById("mensagem-sucesso");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      form.hidden = true;
+      sucesso.hidden = false;
+      sucesso.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  </script>
+  <script src="JS/navbar.js" defer></script>
+</body>
+</html>
